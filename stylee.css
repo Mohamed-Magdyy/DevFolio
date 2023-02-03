@@ -1,0 +1,496 @@
+*{
+    box-sizing: border-box;
+}
+.body{
+    background-color: #ced4da;
+}
+::-webkit-scrollbar{
+    width: 10px;
+  
+  }
+  ::-webkit-scrollbar-track{
+    background-color: #c5c5c5;
+    border-radius: 1px;
+  
+  
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #0056b9;
+    border-radius: 2px;
+  
+  }
+#mainNav{
+    transition: all 1s;
+}
+.nav-item{
+    font-weight: 700;
+    
+    
+}
+.navbar-brand{
+    font-weight: 700;
+    font-size: 2em;
+}
+.dropdown-toggle{
+    background-color: aqua;
+
+}
+#navbarSupportedContent a{
+    position: relative;
+}
+#navbarSupportedContent a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    background-color: brown;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+#navbarSupportedContent a:hover::after{
+    width: 100%;
+}
+#home{
+    /* background-image: url(wek.jpg.jpg); */
+    background-image: url(imges/wek.jpg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.layout{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+}
+
+.home-cont{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-cont h1{
+    font-weight: 700;
+}
+.home-cont h2{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+#home  h2::after{
+    content: "";
+    left: 6px;
+    position: relative;
+    animation-name: type;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes type{
+    0%{content: " |";}
+    3%{content: " D|";}
+    6%{content: "De|";}
+    9%{content: "Des|";}
+    12%{content: "Desi|";}
+    15%{content: "Desig|";}
+    18%{content: "Design|";}
+    21%{content: "Design|";}
+    24%{content: "Desig|";}
+    27%{content: "Desi|";}
+    30%{content: "Des|";}
+    33%{content: "De|";}
+    36%{content: "|";}
+    39%{content: "D|";}
+    42%{content: "De|";}
+    45%{content: "Dev|";}
+    48%{content: "Dev|";}
+    51%{content: "Deve|";}
+    54%{content: "Devel|";}
+    57%{content: "Devel|";}
+    60%{content: "Develo|";}
+    63%{content: "Develop|";}
+    66%{content: "Develope|";}
+    69%{content: "Developer|";}
+    71%{content: "Developer|";}
+    74%{content: "Develope|";}
+    77%{content: "Develop|";}
+    80%{content: "Develo|";}
+    85%{content: "Devel|";}
+    88%{content: "Deve|";}
+    90%{content: "Dev|";}
+    93%{content: "De|";}
+    96%{content: "D|";}
+    100%{content: "|";}
+    
+    
+
+}
+.about-me p{
+    font-weight: 700;
+    opacity: 0.8;
+}
+#about .skill{
+    background-color: #cde1f8;
+    width: 50%;
+    height: 12px;
+    position: relative;
+
+   
+}
+#about .skillt{
+    background-color: #0078ff;
+    width: 0%;
+    height: 12px;
+    position: absolute;
+    margin-bottom: 0;
+}
+
+#about .skill2{
+    background-color: #cde1f8;
+    width: 50%;
+    height: 12px;
+    position: relative;
+
+   
+}
+#about .skillt2{
+    background-color: #0078ff;
+    width: 0%;
+    height: 12px;
+    position: absolute;
+    margin-bottom: 0;
+}
+#about .skill3{
+    background-color: #cde1f8;
+    width: 50%;
+    height: 12px;
+    position: relative;
+
+   
+}
+#about .skillt3{
+    background-color: #0078ff;
+    width: 0%;
+    height: 12px;
+    position: absolute;
+    margin-bottom: 0;
+}
+#about .skill4{
+    background-color: #cde1f8;
+    width: 50%;
+    height: 12px;
+    position: relative;
+
+   
+}
+#about .skillt4{
+    background-color: #0078ff;
+    width: 0%;
+    height: 12px;
+    position: absolute;
+    margin-bottom: 0;
+}
+#about .line-about{
+    position: relative;
+    
+    
+    
+}
+#about .line-about::after{
+    content: "";
+    width: 15%;
+    height: 3px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 42px;
+    left: 0;
+}
+.led{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.al{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.about-img img{
+    border-radius: 20px;
+}
+#service h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.serv-line{
+    width: 20%;
+    height: 3px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+.icon-service{
+    font-size: 3rem;
+    border: 10px solid #0078ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin: auto;
+    transition: 1s;
+    cursor: pointer;
+
+}
+    
+.service-item :hover.icon-service{
+    background-color: #0078ff;
+    border: 10px solid #c5c3c3;
+}
+.service-item{
+    box-shadow:  0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.titel{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+.icon-servicee{
+    font-size: 2rem;
+    border: 10px solid #cde1f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: auto;
+}
+#portfolio h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.por-img{
+    overflow: hidden;
+    cursor: pointer;
+}
+.por img{
+    transition:  transform 1s ;
+
+    
+}
+.por :hover img{
+    transform: scale(1.5);
+    overflow: hidden;
+}
+#portfolio .icon-servicee{
+    font-size: 2rem;
+    color: #0078ff;
+    border: 4px solid #0078ff;
+    width: 3rem;
+    height: 3rem;
+    bottom: 0;
+    transition: .5s;
+    cursor: pointer;
+}
+#portfolio .icon-servicee:hover{
+
+    border: 4px solid #b1b1b1;
+}
+#portfolio h2{
+  font-size: 1.5rem;
+}
+.por{
+    box-shadow:  0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.web{
+    color: #0078ff;
+}
+#work{
+    background-image: url(imges/tree.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+  
+}
+.vc{
+    position: absolute;
+    background-color: rgba(0, 153, 255, 0.7);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.img-car{
+    width: 8rem;
+    height: 8rem;
+    
+}
+.carousel-indicators [data-bs-target]{
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+}
+.blog-titel p{
+color:  #4e4e4e;
+
+
+}
+.cont-blog{
+    border:1px solid gray;
+    box-shadow:  0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.tt{
+    width: 3rem;
+    height: 3rem;
+}
+.tt a{
+    text-decoration: none;
+    color: #1e1e1e;
+    transition: all 1s;
+  
+}
+.tt a:hover{
+    color: #0078ff;
+}
+.t{
+    position: relative;
+    border:1px solid gray;
+    border-top: 0;
+}
+.ico{
+    position: absolute;
+    right: 0;
+    top: 10px;
+   color: #4e4e4e;
+}
+.lin{
+    height: 4px;
+    width: 7rem;
+    background-color: #0078ff;
+    left: 0;
+    bottom:  0;
+}
+input,textarea{
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid rgba(2, 2, 2, 0.7);
+    padding: 4px;
+}
+input:focus{
+    border: 2px solid #0078ff;
+    outline: none;
+    transition: 0.5s;
+}
+textarea:focus{
+    border: 2px solid #0078ff;
+    outline: none;
+    transition: 0.5s;
+}
+.btnn{
+    color: black;    
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid black;
+    /* transition: 0.5s; */
+    /* background: linear-gradient(to right, #0078ff 50%, transparent 50%); */
+    /* background-size: 200% 100%;
+    background-position: right bottom; */
+    position: relative;
+    z-index: 99999;
+}
+.btnn span{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0078ff;
+    width: 40%;
+    transition: 1s;
+    border-radius: 20px;
+    z-index: -1;
+}
+.btnn:hover span{
+   width: 100%;
+}
+
+    /* background-position: left bottom; */
+    
+
+
+
+textarea{
+    width:100% ;
+}
+.titel-send p{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.icon-gps{
+    color: #0078ff;
+}
+.gg p{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+.icon-media{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 3px solid #0078ff;
+    font-size: 1.5rem;
+    
+}
+.ggg .icon-media{
+    transition: 0.5s;
+}
+.icon-media:hover{
+    background-color: #0078ff;
+    border: 3px solid #dfd9d9;
+}
+.foot p{
+    font-weight: 600;
+    color: white;
+
+}
+#fot .contanier-fluid{
+background-color: #031120;
+position: relative;
+}
+.l{
+    position: absolute;
+    background-color:  rgba(0, 153, 255, 0.7);
+    left: 0;
+    right: 0;
+   
+}
+#mego{
+    background-image: url(imges/of.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+
+
+}
+#mego .container-fluid{
+    background-color: rgba(0, 153, 255, 0.7);
+ 
+}
+
+
+    
+   
